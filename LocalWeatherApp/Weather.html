@@ -1,0 +1,79 @@
+<body ng-app="Weather">
+	<div class="container" ng-controller="MainCtrl">
+		<div class="row">
+			<header class="col-xs-12 text-center">
+				<h2>Show the Local Weather</h2>
+			</header>
+
+			<div class="col-xs-8 col-xs-offset-2">
+				<div class="text-center status">
+					<p>{{Data.city}}, {{Data.country}}</p>
+					<p>{{Data.temp}} &#176;<span class="temp" ng-click="Data.sys()">{{Data.unit}}</span></p>
+
+					<p>{{Data.des}}</p>
+				</div>
+
+				<div class="text-center all-icon">
+					<div class="icon sun-shower hide ">
+						<div class="cloud"></div>
+						<div class="sun">
+							<div class="rays"></div>
+						</div>
+						<div class="rain"></div>
+					</div>
+					<div class="icon thunder-storm hide thunderstom">
+						<div class="cloud"></div>
+						<div class="lightning">
+							<div class="bolt"></div>
+							<div class="bolt"></div>
+						</div>
+					</div>
+					<div class="icon cloudy hide clouds">
+						<div class="cloud"></div>
+						<div class="cloud"></div>
+					</div>
+					<div class="icon flurries hide snow">
+						<div class="cloud"></div>
+						<div class="snow">
+							<div class="flake"></div>
+							<div class="flake"></div>
+						</div>
+					</div>
+					<div class="icon sunny hide clear">
+						<div class="sun">
+							<div class="rays"></div>
+						</div>
+					</div>
+					<div class="icon rainy hide rain">
+						<div class="cloud"></div>
+						<div class="rain"></div>
+					</div>
+				</div>
+
+				<footer>
+					<h4 class="text-center">
+            Page created by
+            <a href="https://www.freecodecamp.com/w0rst0ne" class="temp" target="_blank">
+							<strong>Raileanu Mihai-Andrei</strong></a></br></br>
+						 <a href="mailto:raileanu-mihai@outlook.com" class="temp">
+                <i class="fa fa-envelope fa-fw"></i>
+            </a>
+            <a href="https://github.com/W0rst0ne" class="temp" target='_blank'>
+              <i class="fa fa-github fa-fw"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mihai-andrei-raileanu-1b05b712b" class="temp" target='_blank'>
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://codepen.io/W0rst0ne/" class="temp" target='_blank'>
+              <i class="fa fa-codepen"></i>
+            </a>
+            <a href="https://www.facebook.com/raileanu.mihai24" class="temp" target='_blank'>
+              <i class="fa fa-facebook"></i>
+            </a>
+            </h4>
+
+				</footer>
+			</div>
+		</div>
+	</div>
+</body>
