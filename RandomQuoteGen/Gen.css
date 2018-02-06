@@ -1,0 +1,42 @@
+p, .container-fluid {
+  margin-right: 10%;
+  margin-left: 10%;
+	margin-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #D8D8D8;
+  font-family: 'Lucida Sans Unicode';
+}
+body {
+  position: relative;
+  background-color: #000000;
+}
+
+
+.well {
+  margin-right: 3%;
+  margin-left: 3%;
+	background-color: #343434;
+	border-radius: 15px 50px 15px 50px;
+}
+footer {
+	text-height: 12px;
+	min-height: 10vh;
+	padding-top: 20px;
+	padding-bottom: 1px;
+	color: whitesmoke;
+	background-color: 000000;
+}
+.temp {
+	cursor: pointer;
+	color: blueviolet;
+}
+
+.temp:hover {
+	color: red;
+}
+section {
+  min-height: 50vh;
+  font-size: 15px;
+  font-weight: 300;
+}
