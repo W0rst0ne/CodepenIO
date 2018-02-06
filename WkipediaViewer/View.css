@@ -39,14 +39,14 @@ input[type='text'] {
 .black-text {
   color: black;
   text-decoration: none;
-  text-shadow: 2px 2px black;
+  text-shadow: 0px 1px 1px orange;
   font-size: 25px;
   font-style: bold;
 }
 .orange-text {
   color: orange;
   text-decoration: none;
-  text-shadow: 2px 2px orange;
+  text-shadow: 0px 2px 2px black;
   font-size: 25px;
   font-style: bold;
 }
