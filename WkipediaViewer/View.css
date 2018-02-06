@@ -2,25 +2,17 @@
 
 @import url(https://fonts.googleapis.com/css?family=Rokkitt:700);
 
-// Colors
-$blue: #092B40;
-$lightBlue: #85DEF2;
-$water: #52A5D9;
-$sky: #5BB5D9;
-$orange: #D96F32;
-
 * {
   box-sizing: border-box;
 }
 
 html, body, main {
   font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, Sans-Serif;
-
-  position: relatiave;
+  position: relative;
   margin: 0; padding: 0;
   padding-top: 10px;
   width: 100%; height: 100%;
-  background-color: $blue;
+  background:center url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Wikipedia_svg_logo.svg/2000px-Wikipedia_svg_logo.svg.png);
 }
 
 input[type='text'] {
@@ -44,9 +36,19 @@ input[type='text'] {
   @include transition-duration(2s);
 }
 
-.white-text {
-  color: white;
+.black-text {
+  color: black;
   text-decoration: none;
+  text-shadow: 2px 2px black;
+  font-size: 25px;
+  font-style: bold;
+}
+.orange-text {
+  color: orange;
+  text-decoration: none;
+  text-shadow: 2px 2px orange;
+  font-size: 25px;
+  font-style: bold;
 }
 
 form {
@@ -58,8 +60,8 @@ form {
   margin-left: 0;
   padding: 0;
   margin-bottom: 10px;
-  border: 4px solid $orange;
-  border-radius: 20px;
+  border: 4px solid orange;
+  border-radius: 30px;
 
   @include transition(all .25s ease .3s);
   cursor: pointer;
@@ -68,8 +70,8 @@ form {
     top: 90%;
     left: 90%;
     width: 16px;
-    height: 3px;
-    background-color: $orange;
+    height: 5px;
+    background-color: orange;
     border-radius: 1px;
     @include transition(width .15s ease .55s);
     @include transform(rotate(45deg));
@@ -79,11 +81,12 @@ form {
     width: 100%;
     height: 100%;
     padding: 0 30px 0 15px;
-    font-size: 14px;
+    font-size: 20px;
+    font-style: bold;
     line-height: 38px;
     opacity: 0;
     background-color: transparent;
-    color: white;
+    color: orange;
     @include transition(opacity .15s ease);
   }
 }
@@ -103,19 +106,19 @@ form {
 		right: 5px;
 		height: 2px;
 		width: 2px;
-		border-radius: 1px;
+		border-radius: 5px;
 		@include transition(all .25s ease);
 	}
 	&:before {
 		top: 0px;
-		background-color: $orange;
+		background-color: orange;
 		@include transform(rotate(-45deg));
 		@include transform-origin(top right);
 		@include transition-delay(.1s);
 	}
 	&:after {
 		bottom: 0px;
-		background-color: $orange;
+		background-color: orange;
 		@include transform(rotate(45deg));
 		@include transform-origin(bottom right);
 		@include transition-delay(0s);
@@ -158,7 +161,7 @@ ul {
     color: black;
 
     h1 {
-      font-size: 18px;
+      font-size: 20px;
     }
     p {
       font-size: 14px;
@@ -169,15 +172,15 @@ ul {
     display: block;
     margin-bottom: 10px;
     padding: 15px 30px 5px 30px;
-    background-color: #E7E7E8;
+    background-color: whitesmoke;
     opacity: 0;
     @include animation(new-item 1s ease-in-out forwards);
     @include transition-timing-function(cubic-bezier(0.6, 0, 0.4, 1.0));
 
     &:hover {
-      border-left: 5px solid $orange;
+      border-left: 10px solid orange;
       margin-left: -5px;
-      //box-shadow: inset 2px -2px 0 $orange;
+      box-shadow: inset 2px -2px 0 orange;
     }
   }
 }
